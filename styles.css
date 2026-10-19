@@ -111,6 +111,17 @@ a:hover, a:focus { color: var(--navy); text-decoration: underline; text-underlin
   text-decoration: none;
 }
 
+.nav .nav-page-link {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid rgb(255 255 255 / 24%);
+}
+
+.nav .nav-page-link span {
+  margin-left: 3px;
+  font-size: 11px;
+}
+
 .page {
   grid-area: main;
   min-width: 0;
@@ -309,6 +320,14 @@ blockquote {
 #beyond-research > * {
   position: relative;
   z-index: 1;
+}
+
+#beyond-research h1 { margin-bottom: 10px; }
+
+.page-return {
+  margin-bottom: 12px;
+  font-size: 13px;
+  font-weight: 600;
 }
 
 .beyond-page { max-width: 900px; }
@@ -650,6 +669,12 @@ blockquote {
   .nav a:hover,
   .nav a:focus,
   .nav a.active { border-bottom-color: #dbeaff; border-left: 0; }
+
+  .nav .nav-page-link {
+    margin-top: 0;
+    padding-top: 5px;
+    border-top: 0;
+  }
 
   .page { height: auto; padding: 46px 42px 70px; overflow: visible; }
   .footer { margin-top: 64px; }
