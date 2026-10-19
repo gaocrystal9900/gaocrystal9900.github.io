@@ -605,6 +605,8 @@ blockquote {
   font-weight: 700;
 }
 
+.press-card:only-child { grid-column: 1 / -1; }
+
 .footer {
   margin: 72px 0 0;
   padding: 20px 0 0;
