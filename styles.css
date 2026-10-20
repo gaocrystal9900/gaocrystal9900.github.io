@@ -241,6 +241,65 @@ li::marker { color: var(--blue); }
   letter-spacing: 0.02em;
 }
 
+.paper-abstract {
+  margin-top: 14px;
+}
+
+.paper-abstract summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 12px;
+  border: 1px solid var(--blue-line);
+  border-radius: 7px;
+  color: var(--blue-dark);
+  background: #f6faff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+  list-style: none;
+  transition: background 160ms ease, border-color 160ms ease;
+}
+
+.paper-abstract summary::-webkit-details-marker { display: none; }
+
+.paper-abstract summary::after {
+  content: "+";
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 0.8;
+}
+
+.paper-abstract[open] summary::after { content: "−"; }
+
+.paper-abstract summary:hover,
+.paper-abstract summary:focus-visible {
+  border-color: #8fb2d1;
+  background: #edf5fc;
+}
+
+.paper-abstract summary:focus-visible {
+  outline: 2px solid var(--blue-dark);
+  outline-offset: 2px;
+}
+
+.abstract-copy {
+  margin-top: 13px;
+  padding: 15px 18px;
+  border-left: 3px solid #9dbedc;
+  background: #f8fbfe;
+  color: #425466;
+}
+
+.abstract-copy p {
+  margin: 0;
+}
+
+.abstract-copy p + p {
+  margin-top: 13px;
+}
+
 .subheading {
   margin: 30px 0 13px;
   color: var(--blue-dark);

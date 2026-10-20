@@ -92,11 +92,28 @@
         <h3>A Decision-Support Framework for Food Bank Operations: Overcoming Waste and Uncertainty in Food Distribution</h3>
         <p>Xianjia Gao and Xin Chen</p>
         <p><em>Forthcoming at <span class="journal-name">Manufacturing &amp; Service Operations Management (MSOM)</span></em></p>
-        <p>
-          Forward-looking allocation algorithms for perishable food donations that jointly address effectiveness,
-          efficiency, and equity across a food-assistance network.
-        </p>
         <p><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5455454" target="_blank" rel="noreferrer">SSRN</a></p>
+        <details class="paper-abstract">
+          <summary>Abstract</summary>
+          <div class="abstract-copy">
+            <p>
+              Food banks face the operational challenge of allocating uncertain and perishable donations across
+              partner agencies while balancing effectiveness, efficiency, and equity. Effectiveness reflects
+              nutritional value and freshness relative to agency needs, efficiency reflects waste minimization, and
+              equity reflects fair distribution. Standard myopic allocation rules are not designed to manage these
+              objectives jointly. We formulate the allocation problem as a dynamic program and use a fluid relaxation
+              to derive two implementable policies: a static Scaled Fluid (SF) policy and an adaptive Re-Optimized
+              (ReOPT) policy. We prove that both policies are asymptotically optimal, with regret scaling as
+              O(√N) in the system size N. Using synthetic data and operational data from the Food Bank of the
+              Southern Tier, we show that SF and ReOPT outperform standard benchmarks, including proportional
+              allocation, max-min fair rationing, FIFO, and myopic fill, across a range of cost structures and
+              donation-age profiles. The two policies provide food bank managers with different complexity levels.
+              SF requires only a one-time linear program and is suitable when analytical infrastructure is limited,
+              whereas ReOPT adapts through repeated reoptimization when real-time computation is available. The
+              preferred policy depends primarily on the shelf-life composition of the donation stream.
+            </p>
+          </div>
+        </details>
       </article>
 
       <article class="publication">
@@ -108,6 +125,33 @@
           A demand-shaping and replenishment framework for client-choice food pantries that coordinates point
           prices, inventory, and procurement under uncertain donations and perishability.
         </p>
+        <details class="paper-abstract">
+          <summary>Abstract</summary>
+          <div class="abstract-copy">
+            <p>
+              Client-choice food pantries allow households to select foods according to their own needs and
+              preferences, often using a fixed point budget. Yet in the current practice, point prices typically remain
+              unchanged even as donated supply and inventory vary substantially over time. We study how a pantry
+              should jointly adjust point prices and external procurement under uncertain donations, perishability,
+              and a limited purchasing budget. We model household choice through an expenditure framework and show
+              that the pricing problem can be reformulated in terms of the demand the pantry wishes to induce, with
+              point prices recovered afterward to implement those targets. This transformation, together with
+              Lagrangian relaxation of the shared procurement budget, yields single-item joint inventory–demand
+              problems with a base-stock and list-price structure. We use this structure to develop the Lagrangian
+              Base-Stock Pricing (LBSP) policy and prove its asymptotic optimality.
+            </p>
+            <p>
+              Using transaction data from Crossroads Community Services, we calibrate the model and evaluate the
+              policy through counterfactual simulations. Without additional procurement funding, LBSP performs nearly
+              optimal across different scenarios and outperforms benchmarks in both food distribution and waste
+              reduction. Beyond these performance gains, the framework provides a systematic way to diagnose
+              supply–demand mismatches across foods and identify the appropriate operational response. It shows when
+              dynamic point pricing can effectively align demand with supply, when procurement or quantity limits are
+              needed, and when non-price interventions may be more appropriate. The framework also yields an
+              operational-value index for prioritizing additional procurement and donation requests across foods.
+            </p>
+          </div>
+        </details>
       </article>
 
       <article class="publication">
