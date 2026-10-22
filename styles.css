@@ -551,6 +551,25 @@ blockquote {
 
 .works-gallery img { object-position: center; }
 
+.portfolio-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 20px;
+}
+
+.artist-gallery.portfolio-gallery a {
+  padding: 16px;
+  background: #f7f4ed;
+}
+
+.artist-gallery.portfolio-gallery img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+
 .artist-gallery figure {
   overflow: hidden;
   margin: 0;
@@ -789,6 +808,7 @@ blockquote {
   .artist-columns { grid-template-columns: 1fr; gap: 18px; }
   .artist-feature { padding: 19px 20px; }
   .artist-gallery { grid-template-columns: 1fr; }
+  .artist-gallery.portfolio-gallery { grid-template-columns: 1fr; }
   .artist-gallery figcaption { font-size: 12px; }
   .press-grid { grid-template-columns: 1fr; }
   .press-card { min-height: 0; }
